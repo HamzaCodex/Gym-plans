@@ -1,0 +1,322 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    box-sizing: border-box;
+}
+
+.inner-menu {
+    margin: auto;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 50px;
+    box-sizing: border-box;
+
+    
+}
+
+.inner-menu ul {
+    display: flex; 
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+    flex-grow: 1; 
+    width: 100%;
+
+}
+
+.inner-menu ul li {
+    display: inline-block;
+    margin-top: 35px; 
+    
+}
+
+/* Customize the 4th child (logo or middle item) */
+.inner-menu ul li:nth-child(4) {
+    flex-grow: 1; /* Allow the logo to take space in the middle */
+    display: flex;
+    flex-wrap: wrap;
+
+    z-index: 10;
+
+    margin-left: 80px;
+}
+
+/* Customize the logo's image size */
+.inner-menu ul li:nth-child(4) img {
+    width: 240px; 
+    height: auto;
+    transform: translateY(-75px); /* Move the logo upwards */
+    z-index: 10;
+}
+
+/* Link styles */
+.inner-menu ul li a {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent links from wrapping onto a new line */
+}
+
+/* Hover effect for links */
+.inner-menu ul li a:hover {
+    color: yellow;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.c-item{
+    height: 541px;
+}
+.c-img{
+    height: 100%;
+    object-position: center 20%; 
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition: filter 1s ease;
+
+}
+.gender h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 120px;
+}
+.caro-custom{
+
+    margin-top: 4px;
+
+}
+.plan{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    width: 280px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.plan:hover{
+    background-color: white;
+    color: black;
+}
+
+.carousel-item:hover{
+    transform: scale(1.1);
+    .plan{
+        transform: scale(1.1);
+        transition: transform 1s ease;
+    }
+    .c-img{
+        filter: brightness(0.7);
+        transition: filter 1s ease;
+    }
+}
+.title h1{
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #000000;
+    font-size: 35px;
+}
+.titlepremium h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: transparent;
+    text-align: center;
+    font-size: 35px;
+    -webkit-text-stroke: 1px #ffffff;
+    padding: 20px;
+}
+.gender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.genderbuttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.male,.female{
+    width: 130px;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.male:hover,.female:hover{
+    background-color: black;
+    color: white;
+}
+.plancard{
+    background-color:#fdf5e6;
+    width: 270px;
+    height: 390px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 20px;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+    overflow: hidden;
+}
+.plancard:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-10px);
+     .title h1{
+        color: #000000; 
+        -webkit-text-stroke: none;
+     }
+}
+.plancard-premium{
+        background-color:#000000;
+        width: 270px;
+        height: 390px;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin: 20px;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: box-shadow 0.3s ease, transform 0.3s ease; 
+        overflow: hidden;
+}
+.plancard-premium:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-10px);
+    .titlepremium h1{
+        color: #ffffff; 
+        -webkit-text-stroke: none;
+    }
+}
+.plancontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.plancontainerfemale{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.feature{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.plandetails{
+    text-align: left;
+    margin-top: 15px;
+}
+.plandetails ul{
+    list-style-type:disc;
+    margin-left: 10px;
+}
+.plan-price{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.plan-price2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 35px;
+    font-weight: bolder;
+
+}
+.plan-price1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: bolder;
+}
+.hidden{
+    display: none;
+}
+.backtotop{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    transition:0.3s ease; 
+    cursor: pointer;
+}
+
+.backtotop:hover{
+    background-color: black;
+    color: white;
+}
+.scrollup {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;
+    width: 100%;
+    height: 100px; /* Optional: Set a height for the container */
+}
+.backtotop{
+    cursor: pointer;
+    width: 160px;
+}
+footer{
+    background-color: #000000;
+    margin: 0px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+.footer-contact{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.footer-image img{
+    width: 200px;
+    height: auto;
+}
